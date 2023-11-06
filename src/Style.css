@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:wght@300&family=Playfair+Display&family=Roboto+Slab&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+  .lottie-image {
+    display: none;
+  }
+}
+
+.category-card {
+  padding: 5px 20px;
+  box-shadow: 0 0 2px gray;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .total {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage-header {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px;
+  }
+}
+
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.ant-spin-dot-item{
+  background-color: gray !important;
+}
