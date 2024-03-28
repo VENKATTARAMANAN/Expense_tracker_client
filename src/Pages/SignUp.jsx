@@ -55,6 +55,7 @@ const SignUp = () => {
             navigate("/")
           }
         } catch (error) {
+          setLoading(false)
           console.log(error);
           toast({
             description: error.response.data.message,
